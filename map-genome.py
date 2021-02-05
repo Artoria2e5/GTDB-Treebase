@@ -28,7 +28,7 @@ def traverse_tree_depth(
             yield traverse_tree_depth(c)
 
 
-def map_tree(clade, rev):
+def map_tree(clade: str, rev: str) -> None:
     tree = Phylo.read(f"data/{clade}{rev}.tree", "newick")
     tax = crunch_tax(f"data/{clade}_taxonomy_{rev}.tsv")
 
@@ -38,7 +38,7 @@ def map_tree(clade, rev):
 
     Phylo.write(tree, "data/{clade}{rev}_species.tree", "newick")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     # TODO
     pass
-
