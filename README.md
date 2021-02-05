@@ -5,7 +5,7 @@ Script for converting a GTDB database to a treebase format in opentreeoflife.
 
 * Map representative genomes to species
 * Map suffixed genus names in species to conventional versions
-* Trim off the taxon level prefix
+* Trim off the taxon level prefix &ndash; Actually we can do it in the mapper
 * Join up bacteria and archaea at a root for single-file upload
 
 ## Why some stuff aren't done yet
